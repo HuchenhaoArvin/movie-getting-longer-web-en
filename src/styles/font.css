@@ -1,0 +1,14 @@
+@font-face {
+	font-family: "Noto Sans";
+	src: url("/fonts/NotoSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+	font-family: "Noto Sans SC";
+	src: url("/fonts/NotoSansSC-Regular.otf") format("opentype");
+}
+
+@font-face {
+	font-family: "Shan Zi Gua Zi Chinese";
+	src: url("/fonts/ShanZiGuaZi.ttf") format("truetype");
+}
