@@ -167,7 +167,7 @@
 	}
 
 	function formatChineseNumber(num) {
-		return (num / 100000000).toFixed(2);
+		return (num / 1000000).toFixed(0);
 	}
 </script>
 
@@ -192,9 +192,10 @@
 						transform="translate(-336.3355355266678, -2228.6742722859735)"
 					/>
 					<!-- Text next to the first path -->
-					<text x="80" y="30" font-size="15" fill="#fff6cb"
-						>一部长电影
-						<tspan x="80" dy="20">预算4亿美金</tspan>
+					<text x="80" y="20" font-size="14" fill="#fff6cb"
+						>A Long Movie
+						<tspan x="80" dy="20">With a Budget of</tspan>
+						<tspan x="80" dy="20">$400MM</tspan>
 					</text>
 
 					<!-- Adjusted second path -->
@@ -209,28 +210,29 @@
 					/>
 
 					<!-- Text next to the second path -->
-					<text x="80" y="100" font-size="15" fill="#fff6cb"
-						>一部短电影
-						<tspan x="80" dy="20">预算0.73亿美金</tspan>
+					<text x="80" y="90" font-size="14" fill="#fff6cb"
+						>A Short Movie
+						<tspan x="80" dy="20">With a Budget of</tspan>
+						<tspan x="80" dy="20"> $73MM</tspan>
 					</text>
 				</svg>
 			</div>
 			<Select {options} bind:value={selectedValue} />
 			{#if directorStats}
 				<div class="director-stats">
-					<p>总电影数： {directorStats.totalMovies}</p>
+					<p>Movie Count: {directorStats.totalMovies}</p>
 					<p>
-						长电影数： {directorStats.longMovies} ({directorStats.longMoviesPercentage}%)
+						Long Count: {directorStats.longMovies} ({directorStats.longMoviesPercentage}%)
 					</p>
 
 					<p>
-						最高预算： {formatChineseNumber(directorStats.highestBudget)} 亿美元
+						Highest Budget: ${formatChineseNumber(directorStats.highestBudget)} MM
 					</p>
 					<p>
-						最低预算： {formatChineseNumber(directorStats.lowestBudget)} 亿美元
+						Lowest Budget: ${formatChineseNumber(directorStats.lowestBudget)} MM
 					</p>
 					<p>
-						中位数： {formatChineseNumber(directorStats.medianBudget)} 亿美元
+						Median Budget: ${formatChineseNumber(directorStats.medianBudget)} MM
 					</p>
 				</div>
 			{/if}
@@ -272,14 +274,14 @@
 								>
 									{detail.props.primaryTitle}
 								</div>
-								<div>导演：{detail.props.directors}</div>
-								<div>年份：{detail.props.startYear}</div>
-								<div>时长：{detail.props.runtimeMinutes}分钟</div>
+								<div>Director: {detail.props.directors}</div>
+								<div>Year: {detail.props.startYear}</div>
+								<div>Runtime: {detail.props.runtimeMinutes} Min</div>
 								<div>
-									预算：{formatChineseNumber(detail.props.ProductionBudget)} 亿美元
+									Budget: ${formatChineseNumber(detail.props.ProductionBudget)} MM
 								</div>
 								<div>
-									票房：{formatChineseNumber(detail.props.WorldwideGross)} 亿美元
+									Gross: ${formatChineseNumber(detail.props.WorldwideGross)} MM
 								</div>
 							</div>
 						</Tooltip>
@@ -308,6 +310,7 @@
 		z-index: 10000;
 		max-width: 12rem;
 		margin-top: 2.3rem;
+
 		pointer-events: all;
 	}
 
@@ -330,7 +333,7 @@
 		padding-top: 0.5rem;
 		padding-bottom: 0.5rem;
 		border-radius: 8px; /* Optional: rounded corners */
-		font-size: 0.95rem;
+		font-size: 0.85rem;
 		background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
 		backdrop-filter: blur(50px); /* Blur effect */
 	}

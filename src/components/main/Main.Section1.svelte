@@ -14,7 +14,7 @@
 
 	<MainFig1Animated />
 	{#each Object.values(copy.fig2.static1) as paragraph}
-		<p>{paragraph}</p>
+		<p>{@html paragraph}</p>
 	{/each}
 </div>
 

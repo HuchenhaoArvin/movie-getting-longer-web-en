@@ -77,10 +77,10 @@
 				<div class="row">
 					<span class="key"
 						>{row.key === "MedianRuntime"
-							? "中位数时长"
+							? "MedianRuntime"
 							: formatKey(row.key)}:</span
 					>
-					{formatValue(row.value)} 分钟
+					{formatValue(row.value)} Min
 				</div>
 			{/each}
 		</div>

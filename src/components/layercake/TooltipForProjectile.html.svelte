@@ -58,7 +58,7 @@
 
 	function formatChineseNumber(num) {
 		if (num >= 1000000) {
-			return (num / 100000000).toFixed(2) + "亿美元";
+			return "$" + (num / 1000000).toFixed(0) + "MM USD";
 		} else {
 			return num.toString();
 		}
@@ -116,13 +116,13 @@
 			<div class="title">{found[$config.y]}</div>
 			<div class="row">
 				<div class="long">
-					长电影：{formatChineseNumber(
+					Long Movies: {formatChineseNumber(
 						$data.find((item) => item[$config.y] === found[$config.y])[
 							$config.x
 						]
 					)}
 					<div class="short">
-						短电影：{formatChineseNumber(found[$config.x])}
+						Short Movies: {formatChineseNumber(found[$config.x])}
 					</div>
 				</div>
 			</div>

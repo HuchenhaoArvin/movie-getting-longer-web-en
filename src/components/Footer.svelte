@@ -4,28 +4,35 @@
 
 <footer>
 	<section class="about">
-		<p>撰文：丁杰英、胡琛浩</p>
-		<p>设计：丁杰英、胡琛浩</p>
-		<p>数据分析：胡琛浩、丁杰英</p>
-		<p>开发：胡琛浩</p>
+		<p>Written by: Jieying Ding, Chenhao Hu</p>
+		<p>Design: Jieying Ding, Chenhao Hu</p>
+		<p>Data Analysis: Chenhao Hu, Jieying Ding</p>
+		<p>Coding & Development: Chenhao Hu</p>
 	</section>
 
 	<section class="methodology">
-		<h4>数据说明</h4>
+		<h4>About the Data</h4>
 		<p>
-			本项目数据主要来自 IMDb Non-Commercial Datasets 与 the Numbers budget and
-			gross dataset，我们对 IMDb 的数据进行了清理，选择了其中类型为 “movie” 且
-			“startYear”, “runtimeMinutes”, “averageRating”, “numVotes”
-			的值不为空的条目。
+			The data for this project mainly comes from <a
+				href="https://developer.imdb.com/non-commercial-datasets/"
+				>the IMDb Non-Commercial Datasets</a
+			>
+			and
+			<a href="https://www.the-numbers.com/movie/budgets/all"
+				>The Numbers budget and gross dataset</a
+			>. We cleaned the IMDb data and selected entries where the type is "movie"
+			and the values for "startYear", "runtimeMinutes", "averageRating", and
+			"numVotes" are not empty.
 		</p>
 		<p>
-			由于 IMDb 的这一免费数据库不提供票房与预算数据，我们从 the Numbers
-			网站上获取了相关数据，并将讨论范围限制为只在 the Numbers
-			网站上有票房和预算数据的“流行电影”里。
+			Since IMDb's free database does not provide gross and budget data, we
+			obtained relevant data from The Numbers website and limited our discussion
+			to "popular movies" that have gross and budget data available on The
+			Numbers website.
 		</p>
 	</section>
 	<section class="reference">
-		<h4>参考资料</h4>
+		<h4>References</h4>
 		<p>[1] 吉尔·利波维茨基,让·塞鲁瓦,李宁玥-《总体屏幕:从电影到智能手机》</p>
 		<p>
 			[2] James E. Cutting - Movies on Our Minds: The Evolution of Cinematic
@@ -83,12 +90,17 @@
 	</section>
 
 	<section class="copyright">
-		<p>本项目开发之初使用了 The Pudding 的 Svelte 开源模板，特此感谢。</p>
 		<p>
-			反馈、讨论、交流、合作，请邮件联系 djy20182019@gmail.com 和
-			hantaclaymail@gmail.com。
+			This project was initially developed using <a
+				href="https://github.com/the-pudding/svelte-starter"
+				>The Pudding's Svelte open-source starter</a
+			>. We extend our heartfelt thanks.
 		</p>
-		<p>© 2024 胡琛浩、丁杰英</p>
+		<p>
+			For feedback, discussion, collaboration, or inquiries, please contact us
+			via email at djy20182019@gmail.com and hantaclaymail@gmail.com.
+		</p>
+		<p>© 2024 Chenhao Hu, Jieying Ding</p>
 	</section>
 </footer>
 

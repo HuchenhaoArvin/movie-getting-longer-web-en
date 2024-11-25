@@ -43,13 +43,13 @@
 			<h1>
 				{@html copy.headline}
 			</h1>
-			<h3>胡琛浩&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;丁杰英</h3>
+			<h3>Chenhao Hu&nbsp;&nbsp;&nbsp;&nbsp;Jieying Ding</h3>
 		</div>
 	</div>
 
 	<div class="introstatic">
 		{#each Object.values(copy.intro.static1) as paragraph}
-			<p>{paragraph}</p>
+			<p>{@html paragraph}</p>
 		{/each}
 	</div>
 </section>

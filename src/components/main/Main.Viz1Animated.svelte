@@ -107,7 +107,7 @@
 	<section transition:fade={{ duration: 100 }}>
 		{#if value === 0 || value === 1}
 			<figure>
-				<h2>历年电影时长的中位数</h2>
+				<h2>Median Runtime of Movies by Year</h2>
 				<LayerCake
 					data={filteredDataSingle}
 					{x}
@@ -124,10 +124,10 @@
 							gridlines={false}
 							tickMarks={true}
 							baseline={true}
-							unitText="（年）"
+							unitText="Year"
 							unitTextdx={10}
 						/>
-						<AxisY gridlines={false} showUnit={true} unitText="（分钟）" />
+						<AxisY gridlines={false} showUnit={true} unitText="Minutes" />
 						<MultiLine {value} />
 					</Svg>
 					<Html>
@@ -138,7 +138,7 @@
 		{/if}
 		{#if value === 2 || value === 3}
 			<figure>
-				<h2>评论数前10%电影时长的中位数</h2>
+				<h2>Median Runtime of Top 10% Most Reviewed Movies</h2>
 				<LayerCake
 					data={filteredData}
 					{x}
@@ -155,10 +155,10 @@
 							tickMarks={true}
 							gridlines={false}
 							baseline={true}
-							unitText="（年）"
+							unitText="Year"
 							unitTextdx={10}
 						/>
-						<AxisY gridlines={false} showUnit={true} unitText="（分钟）" />
+						<AxisY gridlines={false} showUnit={true} unitText="Minutes" />
 						<MultiLineAnimatedIn {value} initData={filteredDataSingle} />
 					</Svg>
 					<Html>
@@ -172,7 +172,7 @@
 
 <style>
 	h2 {
-		font-size: 2rem;
+		font-size: 1.75rem;
 		font-weight: 600;
 		margin-left: -35px; /* 根据需要调整偏移量 */
 		margin-bottom: 30px;

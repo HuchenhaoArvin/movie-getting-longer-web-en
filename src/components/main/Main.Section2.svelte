@@ -10,11 +10,11 @@
 <div class="section">
 	<!-- <h2>{copy.subheading2}</h2> -->
 	{#each Object.values(copy.fig3.static1) as paragraph}
-		<p>{paragraph}</p>
+		<p>{@html paragraph}</p>
 	{/each}
 	<MainFig3 />
 	{#each Object.values(copy.fig3.static2) as paragraph}
-		<p>{paragraph}</p>
+		<p>{@html paragraph}</p>
 	{/each}
 </div>
 

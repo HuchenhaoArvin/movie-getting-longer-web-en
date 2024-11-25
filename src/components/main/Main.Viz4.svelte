@@ -41,8 +41,8 @@
 	const formatTickX = (d) => formatChineseNumber(d);
 
 	function formatChineseNumber(num) {
-		if (num >= 1000000) {
-			return (num / 100000000).toFixed(1);
+		if (num >= 10000) {
+			return num / 1000000;
 		} else {
 			return num.toString();
 		}
@@ -68,7 +68,7 @@
 				on:blur={handleMouseOut}
 				in:fade={{ duration: 1000 }}
 			>
-				<h2>历年电影评分中位数</h2>
+				<h2>Median Movie Rating by Year</h2>
 				<LayerCake
 					data={transformedRatingData}
 					x={x1}
@@ -85,10 +85,10 @@
 							gridlines={false}
 							tickMarks={true}
 							baseline={true}
-							unitText="（分）"
+							unitText="Score"
 							unitTextdx={10}
 						/>
-						<AxisY gridlines={false} unitText="（年）" />
+						<AxisY gridlines={false} unitText="Year" />
 						<Projectile tooltip={foundData} />
 					</Svg>
 					<Html>
@@ -104,7 +104,7 @@
 				on:blur={handleMouseOut}
 				in:fade={{ duration: 1000 }}
 			>
-				<h2>历年电影票房中位数</h2>
+				<h2>Median Movie Gross by Year</h2>
 				<LayerCake
 					data={transformedGrossData}
 					x={x2}
@@ -122,10 +122,10 @@
 							tickMarks={true}
 							formatTick={formatTickX}
 							baseline={true}
-							unitText="（亿美元）"
+							unitText="MM USD"
 							unitTextdx={20}
 						/>
-						<AxisY gridlines={false} tickMarks={true} unitText="（年）" />
+						<AxisY gridlines={false} tickMarks={true} unitText="Year" />
 
 						<Projectile tooltip={foundData} />
 					</Svg>
@@ -140,7 +140,7 @@
 
 <style>
 	h2 {
-		font-size: 2rem;
+		font-size: 1.75rem;
 		font-weight: 600;
 		margin-left: -45px; /* 根据需要调整偏移量 */
 		margin-bottom: 30px;

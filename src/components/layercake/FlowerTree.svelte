@@ -217,7 +217,7 @@
 				fill="white"
 				z-index="1000"
 			>
-				{$data[0].year} 年
+				{$data[0].year}
 			</text>
 		{:else}
 			<text
@@ -242,7 +242,7 @@
 					fill="gold"
 					z-index="1000"
 				>
-					长电影数：{count}
+					Long Count {count}
 				</text>
 				<text
 					x="-65"
@@ -252,7 +252,7 @@
 					fill="white"
 					z-index="1000"
 				>
-					短电影数：{countShort}
+					Short Count {countShort}
 				</text>
 				<text
 					x="-75"
@@ -262,7 +262,7 @@
 					fill="gold"
 					z-index="1000"
 				>
-					长电影占：{percentage}%
+					Long Ratio {percentage}%
 				</text>
 			</g>
 		{/if}

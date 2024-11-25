@@ -132,7 +132,7 @@
 <figure>
 	<div class="viz3texts">
 		<div
-			style="width:320px;transform:translate(-240px,-120px);"
+			style="width:320px;transform:translate(-240px,-240px);"
 			use:inView
 			on:enter={() => handleEnterText(0)}
 			on:exit={() => handleExitText(0)}
@@ -143,7 +143,7 @@
 		</div>
 		<div
 			class={`viz3text ${isVisibleText[1] ? "displaytext" : ""}`}
-			style="width:350px;transform:translate(380px,380px);"
+			style="width:350px;transform:translate(380px,275px);"
 			use:inView
 			on:enter={() => handleEnterText(1)}
 			on:exit={() => handleExitText(1)}
@@ -152,7 +152,7 @@
 		</div>
 		<div
 			class={`viz3text ${isVisibleText[2] ? "displaytext" : ""}`}
-			style="width:380px;transform:translate(340px,2180px)"
+			style="width:540px;transform:translate(330px,2050px)"
 			use:inView
 			on:enter={() => handleEnterText(2)}
 			on:exit={() => handleExitText(2)}
@@ -161,7 +161,7 @@
 		</div>
 		<div
 			class={`viz3text ${lightedFlowers[16] ? "displaytext" : ""}`}
-			style="width:80px;transform:translate(585px,1015px);font-size:0.8rem"
+			style="width:80px;transform:translate(585px,815px);font-size:0.8rem"
 			use:inView
 			on:enter={() => handleEnterText(3)}
 			on:exit={() => handleExitText(3)}
@@ -170,7 +170,7 @@
 		</div>
 		<div
 			class={`viz3text ${lightedFlowers[3] ? "displaytext" : ""}`}
-			style="width:100px;transform:translate(430px,-450px);font-size:0.8rem"
+			style="width:100px;transform:translate(430px,-650px);font-size:0.8rem"
 			use:inView
 			on:enter={() => handleEnterText(4)}
 			on:exit={() => handleExitText(4)}
@@ -179,7 +179,7 @@
 		</div>
 		<div
 			class={`viz3text ${lightedFlowers[13] ? "displaytext" : ""}`}
-			style="width:100px;transform:translate(-210px,700px);font-size:0.8rem"
+			style="width:100px;transform:translate(-210px,500px);font-size:0.8rem"
 			use:inView
 			on:enter={() => handleEnterText(5)}
 			on:exit={() => handleExitText(5)}
